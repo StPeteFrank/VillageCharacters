@@ -11,5 +11,12 @@ namespace villagecharacters.Models
     public string Speed { get; set; }
 
     public string Hitpoints { get; set; }
+
+    //Navigation Properties
+
+    public int VillageId { get; set; }
+
+    public Villages Villages { get; set; }
+
   }
 }
