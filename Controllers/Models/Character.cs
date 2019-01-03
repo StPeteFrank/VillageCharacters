@@ -1,6 +1,6 @@
 namespace villagecharacters.Models
 {
-  public class Characters
+  public class Character
   {
     public int Id { get; set; }
 
@@ -16,7 +16,7 @@ namespace villagecharacters.Models
 
     public int VillageId { get; set; }
 
-    public Villages Villages { get; set; }
+    public Village Village { get; set; }
 
   }
 }

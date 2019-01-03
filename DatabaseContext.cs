@@ -44,9 +44,9 @@ namespace villagecharacters
       modelBuilder.HasAnnotation("ProductVersion", "2.2.0-rtm-35687");
     }
 
-    public DbSet<Villages> Villages { get; set; }
+    public DbSet<Village> Village { get; set; }
 
-    public DbSet<Characters> Characters { get; set; }
+    public DbSet<Character> Character { get; set; }
 
   }
 }

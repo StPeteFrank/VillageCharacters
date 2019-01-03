@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace villagecharacters.Models
 {
-  public class Villages
+  public class Village
   {
     public int Id { get; set; }
 
@@ -15,6 +15,6 @@ namespace villagecharacters.Models
     public string NumberOfWalls { get; set; }
 
     //Navigation Properties
-    public List<Characters> Characters { get; set; } = new List<Characters>();
+    public List<Character> Character { get; set; } = new List<Character>();
   }
 }
