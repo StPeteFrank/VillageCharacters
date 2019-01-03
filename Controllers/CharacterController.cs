@@ -6,13 +6,18 @@ using villagecharacters.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace carsearchapi.Controllers
+namespace villagecharacters.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
   public class CharacterController : ControllerBase
   {
+    private DatabaseContext db;
 
+    public CharacterController()
+    {
+      this.db = new DatabaseContext();
+    }
 
   }
 }
