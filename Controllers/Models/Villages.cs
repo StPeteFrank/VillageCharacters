@@ -1,6 +1,6 @@
 namespace villagecharacters.Models
 {
-  class Villages
+  public class Villages
   {
     public int Id { get; set; }
 
@@ -8,7 +8,7 @@ namespace villagecharacters.Models
 
     public string VillageLevel { get; set; }
 
-    public string Capacity { get; set; }
+    public string TroopCapacity { get; set; }
 
     public string NumberOfWalls { get; set; }
   }
