@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace villagecharacters.Models
 {
   public class Character
@@ -12,11 +14,14 @@ namespace villagecharacters.Models
 
     public string Hitpoints { get; set; }
 
+
     //Navigation Properties
+
 
     public int VillageId { get; set; }
 
     public Village Village { get; set; }
+
 
   }
 }

@@ -15,6 +15,10 @@ namespace villagecharacters.Models
     public string NumberOfWalls { get; set; }
 
     //Navigation Properties
+
+
     public List<Character> Character { get; set; } = new List<Character>();
+
+
   }
 }

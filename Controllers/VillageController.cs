@@ -20,14 +20,14 @@ namespace villagecharacters.Controllers
       this.db = new DatabaseContext();
     }
     [HttpGet]
-    //This here is my GET search (read).
+
     public ActionResult<List<Village>> GetAllVillages()
     {
       var results = this.db.Village;
       return results.ToList();
     }
     [HttpPost]
-    //This here is my POST create.
+
     public ActionResult<Village> Post([FromBody] Village newVillage)
     {
       this.db.Village.Add(newVillage);
@@ -35,7 +35,7 @@ namespace villagecharacters.Controllers
       return newVillage;
     }
     [HttpPut]
-    //This here is my PUT update.
+
     public ActionResult<Village> Put([FromBody] Village updateVillage)
     {
       this.db.Village.Update(updateVillage);
@@ -43,7 +43,7 @@ namespace villagecharacters.Controllers
       return updateVillage;
     }
     [HttpDelete]
-    //This here wil be my DELETE delete.
+
     public ActionResult<Village> Delete([FromBody] Village deleteVillage)
     {
       this.db.Village.Remove(deleteVillage);
